@@ -13,5 +13,5 @@ class SSModMod(loader.Module):
                     if "Vadim в поиске" in message.message:
                         await message.client.send_message(-1001520606324, 'Начать клановую войну')
                     if "Елена в поиске" in message.message:
-                        await message.client.send_message(-1001556219219, 'Начать клановую войну')
+                        await message.client.send_message(-1001264854926, 'Начать клановую войну')
         except: pass
