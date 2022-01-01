@@ -1,0 +1,31 @@
+from .. import loader, utils
+from telethon.tl.types import Message
+from telethon.tl.functions.messages import SendMessageRequest
+
+class SSModMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'SSMod'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001379995697, -1001724206423}: 
+                if message.sender_id in {692657524, 449434040}:      
+                    if "Вадим в поиске" in message.message:
+                        await sleep (103)
+                        await message.client.send_message(-1001520606324, 'Начать клановую войну')
+                    if "Отправиться за картой" in message.message:
+                        await message.client.send_message(-1001520606324, 'Отправиться за картой')
+                    if "Отправиться за картой" in message.message:
+                        await message.client.send_message(-1001264854926, 'Отправиться за картой')
+                    if "Отправиться за картой" in message.message:
+                        await message.client.send_message(-1001556219219, 'Отправиться за картой')
+                    if "Кв Свадьба" in message.message:
+                        await message.client.send_message(-1001520606324, 'Начать клановую войну')
+                    if "Кв Трез" in message.message:
+                        await message.client.send_message(-1001264854926, 'Начать клановую войну')
+                    if "Кв Авада" in message.message:
+                        await message.client.send_message(-1001556219219, 'Начать клановую войну')
+                    if "Том в поиске" in message.message:
+                        await sleep (98)
+                        await message.client.send_message(-1001556219219, 'Начать клановую войну')
+        except: pass
