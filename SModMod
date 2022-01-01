@@ -1,0 +1,28 @@
+from .. import loader, utils
+from telethon.tl.types import Message
+from telethon.tl.functions.messages import SendMessageRequest
+
+class SModMod(loader.Module):
+    """EF mod."""
+    strings = {'name': 'SMod'}
+
+    async def watcher(self, message):
+        try:
+            if message.chat_id in {-1001767017980}: 
+                if "В поиске Вадим и его жабехи" in message.message:
+                    await message.client.send_message(-1001379995697, 'Вадим в поиске')
+                if "В поиске Том Рэддл" in message.message:
+                    await message.client.send_message(-1001379995697, 'Том в поиске')
+                if "В поиске Пять Жаб" in message.message:
+                    await message.client.send_message(-1001379995697, 'Пять в поиске')
+                if "В поиске Жабуины" in message.message:
+                    await message.client.send_message(-1001379995697, 'Жабуины в поиске')
+                if "В поиске SwampOfBigDicks" in message.message:
+                    await message.client.send_message(-1001379995697, 'Swamp в поиске')
+                if "В поиске багoboty" in message.message:
+                    await message.client.send_message(-1001379995697, 'Баги в поиске')
+                if "В поиске Bunny Kingdom" in message.message:
+                    await message.client.send_message(-1001379995697, 'Bunny в поиске @miss_shahoval')
+                if "В поиске МОРГ УЧИХ" in message.message:
+                    await message.client.send_message(-1001379995697, 'Морг в поиске @miss_shahoval')
+        except: pass
