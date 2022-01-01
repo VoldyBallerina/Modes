@@ -19,7 +19,7 @@ class SSModMod(loader.Module):
                         await message.client.send_message(-1001264854926, 'Отправиться за картой')
                     if "Отправиться за картой" in message.message:
                         await message.client.send_message(-1001556219219, 'Отправиться за картой')
-                   if "Кв Свадьба" in message.message:
+                    if "Кв Свадьба" in message.message:
                         await message.client.send_message(-1001520606324, 'Начать клановую войну')
                     if "Кв Трез" in message.message:
                         await message.client.send_message(-1001264854926, 'Начать клановую войну')
