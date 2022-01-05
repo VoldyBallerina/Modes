@@ -1,6 +1,7 @@
 from .. import loader, utils
 from telethon.tl.types import Message
 from telethon.tl.functions.messages import SendMessageRequest
+from asyncio import sleep
 
 class SSModMod(loader.Module):
     """EF mod."""
