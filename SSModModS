@@ -12,8 +12,8 @@ class SSModMod(loader.Module):
             if message.chat_id in {-1001379995697, -1001724206423}: 
                 if message.sender_id in {692657524, 449434040}:      
                     if "Вадим в поиске" in message.message:
-                        await sleep (103)
-                        await message.client.send_message(-1001520606324, 'Начать клановую войну')
+                        await sleep (57)
+                        await message.client.send_message(-1001556219219, 'Начать клановую войну')
                     if "Отправиться за картой" in message.message:
                         await message.client.send_message(-1001520606324, 'Отправиться за картой')
                     if "Отправиться за картой" in message.message:
@@ -25,8 +25,5 @@ class SSModMod(loader.Module):
                     if "Кв Трез" in message.message:
                         await message.client.send_message(-1001264854926, 'Начать клановую войну')
                     if "Кв Авада" in message.message:
-                        await message.client.send_message(-1001556219219, 'Начать клановую войну')
-                    if "Том в поиске" in message.message:
-                        await sleep (98)
                         await message.client.send_message(-1001556219219, 'Начать клановую войну')
         except: pass
