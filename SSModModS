@@ -12,7 +12,7 @@ class SSModMod(loader.Module):
             if message.chat_id in {-1001379995697, -1001724206423}: 
                 if message.sender_id in {692657524, 449434040}:      
                     if "Вадим в поиске" in message.message:
-                        await sleep (57)
+                        await sleep (48)
                         await message.client.send_message(-1001556219219, 'Начать клановую войну')
                     if "Отправиться за картой" in message.message:
                         await message.client.send_message(-1001520606324, 'Отправиться за картой')
