@@ -1,0 +1,30 @@
+import asyncio
+import datetime
+import logging
+import random
+import re
+
+from telethon import events, functions
+from .. import loader, utils 
+from telethon.tl.types import Message
+from telethon.tl.functions.messages import SendMessageRequest
+
+chatik = [-1001661821851]
+ 
+class HHModMod(loader.Module):
+    """HHMod mod."""
+    strings = {'name': 'HHMod'}
+
+    async def watcher(self, message):
+        try:
+             if message.sender_id not in {1124824021}:
+                if "начать клановую войну" in message.message.casefold():
+                    aaa = ""
+                    async with message.client.conversation(chat) as conv:
+                        response = await conv.wait_event(events.NewMessage(incoming=True, from_users=1124824021, chats=message.chat_id))
+                        if "Отлично! Как только" in response.text:
+                            aaa =  f"<i>{message.sender.first_name} в поиске</i>"
+                            rret = await message.client.get_messages(chatik, ids=id)
+                            await rret.edit(aaa)
+                    await message.client.send_message(chatik, aaa)
+        except: pass
